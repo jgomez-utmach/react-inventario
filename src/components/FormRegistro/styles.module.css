@@ -1,0 +1,51 @@
+/* styles.module.css */
+
+.formulario {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.formulario > section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .formulario > section {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+.campo {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.campo > input,
+.campo > select  {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.formulario > button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario > button:hover {
+  background-color: #0056b3;
+}

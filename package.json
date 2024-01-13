@@ -6,13 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
-    "eslint": "8.55.0",
-    "eslint-config-next": "14.0.4",
+    "@json2csv/plainjs": "^7.0.4",
+    "axios": "^1.6.2",
+    "bootstrap": "^5.3.2",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
     "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.55.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.1"
   }
 }
